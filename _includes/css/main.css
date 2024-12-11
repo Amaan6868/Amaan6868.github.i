@@ -1,4 +1,9 @@
-/* Body Styling */
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
 body {
     overflow-x: hidden;
 }
@@ -27,69 +32,255 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
-/* Navbar */
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+    overflow: visible;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #{{ site.color.primary }};
+}
+
+hr.star-primary {
+    border-color: #{{ site.color.secondary }};
+}
+
+hr.star-primary:after {
+    color: #{{ site.color.secondary }};
+    background-color: #fff;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #{{ site.color.primary }};
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background-color: #C4A484;
-    border: none;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.success {
     color: #fff;
+    background: #{{ site.color.primary }};
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #000;
-    background-color: transparent;
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
 }
 
-/* Footer Styling */
-.footer-above {
-    padding-top: 50px;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+/* Updated Portfolio Grid */
+.portfolio-flex-grid .portfolio-flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items */
+    gap: 20px; /* Adds spacing between items */
 }
 
-.footer-below {
-    padding: 25px 0;
-    background-color: #333; /* Darker black */
-    color: #fff;
+.portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+    flex: 1 0 calc(50% - 20px); /* Two columns with spacing */
+    max-width: calc(50% - 20px);
 }
 
-.btn-social {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #fff;
-    border-radius: 50%;
+@media (min-width: 960px) {
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+        flex: 1 0 calc(25% - 20px); /* Four columns on larger screens */
+        max-width: calc(25% - 20px);
+    }
+}
+
+/* Modal Styles */
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
     text-align: center;
-    font-size: 30px;
-    line-height: 58px;
-    color: #fff;
-    background: transparent;
-    transition: all 0.3s ease;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
-.btn-social:hover {
-    color: #C4A484; /* Adjust hover color */
-    background-color: #fff;
-    border-color: #C4A484;
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
 }
 
-.list-inline {
-    padding-left: 0;
-    list-style: none;
-    margin-left: 0;
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
 }
 
-.list-inline > li {
-    display: inline-block;
-    margin: 0 10px;
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #{{ site.color.secondary }};
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #{{ site.color.secondary }};
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.navbar-nav>.active>a {
+    background-color: #{{ site.color.secondary-dark }} !important;
+}
+
+/* Fix modal mouse wheel issues */
+.modal.fade.in {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
