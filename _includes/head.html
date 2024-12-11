@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ site.title }}</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ site.description }}">
   <meta name="keywords" content="{{ site.keywords }}" />
   {% if site.meta_author %}
@@ -10,8 +10,17 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
 
-  <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-  <link rel="stylesheet" href="{{ " style.css" }}">
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ "style.css" }}">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4fX9fj8wLjRWbSRTVgR0XVdyiHAtskhMLZW6UFbkXZQ1wQbB0n2FRgfCR0Yx2kYh+ANWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Google verification -->
   {% if site.google_verify %}
@@ -21,12 +30,7 @@
   {% if site.bing_verify %}
   <meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
-  <!-- Custom Fonts -->
-  <link rel="stylesheet" href="{{ " css/font-awesome/css/all.min.css" }}">
-  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
