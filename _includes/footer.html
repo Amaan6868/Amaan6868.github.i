@@ -3,32 +3,24 @@
   <div class="footer-above">
     <div class="container">
       <div class="row">
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.location }}</h3>
-          <p>
-            {% for adress in site.address %}
-            {{ adress.line }} <br>
-            {% endfor %}
-          </p>
-        </div>
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.social }}</h3>
+        <div class="footer-col col-md-6">
+          <h3>Connect With Me</h3>
           <ul class="list-inline">
             <li>
               <a href="https://www.linkedin.com/in/amaan-afzal-a72374288/" target="_blank" class="btn-social btn-outline">
-                <i class="fa fa-linkedin"></i>
+                <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
               <a href="https://github.com/Amaan6868" target="_blank" class="btn-social btn-outline">
-                <i class="fa fa-github"></i>
+                <i class="fab fa-github"></i>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-col col-md-4">
-          <h3>{{ site.footer.credits }}</h3>
-          <p>{{ site.credits }}</p>
+        <div class="footer-col col-md-6">
+          <h3>Footer Credits</h3>
+          <p>Designed & Developed by Amaan Afzal</p>
         </div>
       </div>
     </div>
@@ -37,7 +29,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
+          Copyright &copy; Amaan Afzal 2024
         </div>
       </div>
     </div>
