@@ -229,6 +229,38 @@ section.success {
     }
 }
 
+.btn-social {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 55px;
+  color: #fff;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+  color: #C4A484; /* Adjust to your hover color preference */
+  background-color: #fff;
+  border-color: #C4A484;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: 0;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
 footer {
     color: #fff;
 }
