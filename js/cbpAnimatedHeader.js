@@ -32,6 +32,7 @@ var cbpAnimatedHeader = (function() {
 		else {
 			classie.remove( header, 'navbar-shrink' );
 		}
+		console.log('After:', header.className);
 		didScroll = false;
 	}
 
