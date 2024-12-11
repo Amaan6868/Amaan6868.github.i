@@ -141,26 +141,6 @@ section {
     padding: 100px 0;
 }
 
-section h2 {
-    margin: 0;
-    font-size: 3em;
-}
-
-/* Background colors for sections */
-section#portfolio {
-    background-color: #fff;
-}
-
-section#about {
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-section#contact {
-    background-color: #2c3e50;
-    color: #fff;
-}
-
 section.success {
     color: #fff;
     background: #{{ site.color.primary }};
@@ -172,115 +152,69 @@ section.success {
     }
 }
 
-/* Portfolio Grid Layout for 4 Projects */
-.portfolio-flex-grid .portfolio-flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+#portfolio .portfolio-item {
+    margin: 0 0 15px;
 }
 
-.portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-    position: relative;
-    flex: 1 0 calc(50% - 20px); /* Two columns on smaller screens */
-    max-width: calc(50% - 20px);
-    margin-bottom: 20px;
-}
-
-@media (min-width: 960px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-        flex: 1 0 calc(25% - 20px); /* Four columns on larger screens */
-        max-width: calc(25% - 20px);
-    }
-}
-
-/* Hover Animation */
-.portfolio-item .portfolio-link {
-    position: relative;
+#portfolio .portfolio-item .portfolio-link {
     display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
-.portfolio-item .portfolio-link .caption {
+#portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Black overlay */
-    opacity: 0; /* Hidden by default */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+    opacity: 0;
+    background: rgba({{ site.color.primary-rgb }}, 0.9);
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 }
 
-.portfolio-item .portfolio-link:hover .caption {
-    opacity: 1; /* Visible on hover */
+#portfolio .portfolio-item .portfolio-link:hover .caption {
+    opacity: 1;
 }
 
-.portfolio-item .portfolio-link .caption-content {
-    color: #fff;
-    font-size: 20px;
-}
-
-.portfolio-item .portfolio-link .caption-content i {
-    font-size: 3em; /* Magnifying glass size */
-}
-
-/* Modal Styles */
-.portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
     text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    font-size: 20px;
+    color: #fff;
 }
 
-.portfolio-modal .modal-content h2 {
-    margin: 0;
-    font-size: 3em;
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
 }
 
-.portfolio-modal .modal-content img {
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content .item-details {
-    margin: 30px 0;
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.portfolio-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
+footer .footer-above {
+    padding-top: 50px;
     background-color: #{{ site.color.secondary }};
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #{{ site.color.secondary }};
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #{{ site.color.secondary-dark }};
 }
