@@ -83,6 +83,12 @@ h6 {
     border-color: #C4A484;
 }
 
+.btn-social i {
+  font-size: 30px;
+  line-height: 58px;
+}
+
+
 .list-inline {
     padding-left: 0;
     list-style: none;
