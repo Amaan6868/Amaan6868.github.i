@@ -1,3 +1,4 @@
+/* Body Styling */
 body {
     overflow-x: hidden;
 }
@@ -26,255 +27,69 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
-    margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-    overflow: visible;
-}
-
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-}
-
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #{{ site.color.primary }};
-}
-
-hr.star-primary {
-    border-color: #{{ site.color.secondary }};
-}
-
-hr.star-primary:after {
-    color: #{{ site.color.secondary }};
-    background-color: #fff;
-}
-
-.img-centered {
-    margin: 0 auto;
-}
-
-header {
-    text-align: center;
-    color: #fff;
-    background: #{{ site.color.primary }};
-}
-
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
-
-header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-}
-
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
-}
-
-@media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
-
-    header .intro-text .name {
-        font-size: 4.75em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
-}
-
+/* Navbar */
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
+    background-color: #C4A484;
+    border: none;
 }
 
-.navbar a:focus {
-    outline: 0;
-}
-
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
-
-.navbar-default,
-.navbar-inverse {
-    border: 0;
-}
-
-section {
-    padding: 100px 0;
-}
-
-section.success {
-    color: #fff;
-    background: #{{ site.color.primary }};
-}
-
-@media(max-width:767px) {
-    section {
-        padding: 75px 0;
-    }
-}
-
-#portfolio .portfolio-item {
-    margin: 0 0 15px;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba({{ site.color.primary-rgb }}, 0.9);
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-}
-
-#portfolio .portfolio-item .portfolio-link:hover .caption {
-    opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
+.navbar-default .navbar-nav > li > a {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #000;
+    background-color: transparent;
 }
 
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
+/* Footer Styling */
+.footer-above {
+    padding-top: 50px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
 }
 
-/* Portfolio Grid Fix */
-.portfolio-flex-grid .portfolio-flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between items */
-}
-
-.portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-    flex: 1 0 calc(25% - 20px); /* Four items per row on large screens */
-    max-width: calc(25% - 20px);
-    box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-        flex: 1 0 calc(50% - 20px); /* Two items per row on smaller screens */
-        max-width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 480px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-        flex: 1 0 100%; /* One item per row on very small screens */
-        max-width: 100%;
-    }
+.footer-below {
+    padding: 25px 0;
+    background-color: #333; /* Darker black */
+    color: #fff;
 }
 
 .btn-social {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 30px;
-  line-height: 55px;
-  color: #fff;
-  background: transparent;
-  transition: all 0.3s ease;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 58px;
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s ease;
 }
 
 .btn-social:hover {
-  color: #C4A484; /* Adjust to your hover color preference */
-  background-color: #fff;
-  border-color: #C4A484;
+    color: #C4A484; /* Adjust hover color */
+    background-color: #fff;
+    border-color: #C4A484;
 }
 
 .list-inline {
-  padding-left: 0;
-  list-style: none;
-  margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-left: 0;
 }
 
 .list-inline > li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-
-footer {
-    color: #fff;
-}
-
-footer h3 {
-    margin-bottom: 30px;
-}
-
-footer .footer-above {
-    padding-top: 50px;
-    background-color: #{{ site.color.secondary }};
-}
-
-footer .footer-below {
-    padding: 25px 0;
-    background-color: #{{ site.color.primary }};
+    display: inline-block;
+    margin: 0 10px;
 }
