@@ -2,7 +2,7 @@
 layout: default
 modal-id: 2
 date: 2023-12-27
-img: SoundSPace.png
+img: SoundSpace.png
 alt: image-alt
 project-date: December 2023
 category: Web Development
