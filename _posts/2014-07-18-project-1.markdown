@@ -1,11 +1,10 @@
 ---
 layout: default
 modal-id: 1
-date: 2014-07-18
-img: cabin.png
+date: 2024-12-08
+img: ECommerce.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: December 2024
 category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: ECommerce app built following the LinkedIn Learning tutorial at: https://www.linkedin.com/learning/azure-microservices-with-dot-net-core-for-developers/making-sense-of-microservices-architecture-in-a-dot-net-core-and-azure-ecosystem?u=106240434, here is the link to the repo: https://github.com/Amaan6868/ECommerce
 ---
