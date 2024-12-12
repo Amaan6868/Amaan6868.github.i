@@ -171,7 +171,7 @@ section.portfolio {
     background: #{{ site.color.primary }};
 }
 
-header img.img-responsive {
+header img.img-pfp-responsive {
     width: 350px; /* Set width to 350px */
     height: 350px; /* Set height to 350px */
     border-radius: 50%; /* Makes the image circular */
