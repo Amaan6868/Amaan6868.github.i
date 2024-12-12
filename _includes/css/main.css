@@ -83,6 +83,7 @@ header {
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
+    background-color: #{{ site.color.secondary }};
 }
 
 header img {
