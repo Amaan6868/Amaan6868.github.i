@@ -6,5 +6,5 @@ img: Botnet.png
 alt: BotnetSimulation
 project-date: December 2024
 category: Cyber Security
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
+Welcome to my Botnet Simulation project! This Python project simulates a botnet with capabilities to execute UDP flood attacks. It comprises two main components: a bot script and a command-control server. You can find the linke to this repository [here](https://github.com/Amaan6868/BotnetSimulation).
