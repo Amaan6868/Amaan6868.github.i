@@ -339,6 +339,32 @@ section.success {
     padding: 100px 0; /* Maintain existing padding */
 }
 
+#portfolio h2 {
+    color: white; /* Ensure the heading is white */
+}
+
+#portfolio hr.star-primary {
+    border-color: white; /* Ensure the horizontal rule is visible on the black background */
+}
+
+#portfolio hr.star-primary:after {
+    color: black; /* Optional: Change star color inside the horizontal rule if needed */
+    background-color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent overlay for captions */
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly brighter overlay on hover */
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    color: white; /* Ensure caption content is white */
+}
+
+
 
 .btn-outline {
     margin-top: 15px;
