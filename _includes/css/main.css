@@ -446,6 +446,7 @@ footer {
 
 footer h3 {
     margin-bottom: 30px;
+    background-color: #{{ site.color.secondary }};
 }
 
 footer .footer-above {
