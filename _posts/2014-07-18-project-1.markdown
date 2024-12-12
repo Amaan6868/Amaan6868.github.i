@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2024-12-08
-img: ECommerce.png
+img: cake.png
 alt: image-alt
 project-date: December 2024
 category: Web Development
