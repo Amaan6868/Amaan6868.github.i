@@ -77,13 +77,13 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #000;
-    background-color: #{{ site.color.primary }};
+    background: #{{ site.color.primary }};
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
-    background-color: #{{ site.color.primary }};
+    background: #{{ site.color.primary }};
 }
 
 header img {
@@ -165,6 +165,10 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+#portfolio {
+    background: #{{ site.color.primary }};
 }
 
 section {
