@@ -87,8 +87,8 @@ header .container {
 
 img.img-pfp-responsive {
   border-radius: 50%; 
-  width: 350px; 
-  height: 350px; 
+  width: 450px; 
+  height: 450px; 
   object-fit: cover;
   margin: 0 auto;
   display: block; 
