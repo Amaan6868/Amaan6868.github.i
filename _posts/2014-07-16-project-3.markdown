@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2024-12-07
-img: Tranquility
+img: Tranquility.png
 alt: image-alt
 project-date: December 2024
 category: Android App Development
