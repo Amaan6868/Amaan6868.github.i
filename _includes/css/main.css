@@ -248,9 +248,9 @@ section.success {
 }
 
 .btn-social:hover {
-  color: #C4A484; /* Adjust to your hover color preference */
+  color: #{{ site.color.secondary }}; /* Adjust to your hover color preference */
   background-color: #fff;
-  border-color: #C4A484;
+  border-color: #{{ site.color.secondary }};
 }
 
 .list-inline {
@@ -263,7 +263,6 @@ section.success {
   display: inline-block;
   margin: 0 5px;
 }
-
 
 footer {
     color: #fff;
@@ -281,5 +280,4 @@ footer .footer-above {
 footer .footer-below {
     padding: 25px 0;
     background-color: #{{ site.color.secondary-dark }};
-    background-color: #{{ site.color.primary }};
 }
