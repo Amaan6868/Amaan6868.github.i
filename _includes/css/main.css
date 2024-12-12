@@ -464,7 +464,8 @@ footer .footer-below {
 }
 
 .footer-col.col-md-6 {
-    background: #{{ site.color.primary }};
+    color: #fff;
+    background-color: #{{ site.color.primary }};
 }
 
 .btn-social {
