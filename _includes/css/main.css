@@ -231,6 +231,7 @@ section.success {
     text-align: center;
     font-size: 20px;
     color: #fff;
+    background-color: #{{ site.color.primary }};
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
