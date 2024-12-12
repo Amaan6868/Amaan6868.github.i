@@ -167,7 +167,7 @@ header .intro-text .skills {
     border: 0;
 }
 
-#portfolio {
+section.portfolio {
     background: #{{ site.color.primary }};
 }
 
