@@ -305,6 +305,38 @@ section.success {
     }
   } */
 
+
+/* Ensure the container and rows use flexbox for alignment */
+.portfolio-flex-grid .portfolio-row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to handle rows properly */
+    justify-content: center; /* Center align the items */
+    gap: 20px; /* Add spacing between items if desired */
+    margin-bottom: 20px; /* Add some space between rows */
+}
+
+.portfolio-flex-grid .portfolio-item {
+    flex: 1 0 calc(33.333% - 20px); /* Three items per row with spacing */
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+    text-align: center; /* Center text or captions inside items */
+}
+
+@media (max-width: 768px) {
+    .portfolio-flex-grid .portfolio-item {
+        flex: 1 0 calc(50% - 20px); /* Two items per row on smaller screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-flex-grid .portfolio-item {
+        flex: 1 0 100%; /* One item per row on very small screens */
+        max-width: 100%;
+    }
+}
+
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
