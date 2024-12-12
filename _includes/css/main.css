@@ -85,13 +85,9 @@ header .container {
     padding-bottom: 50px;
 }
 
-img.img-pfp-responsive {
-  border-radius: 50%; 
-  width: 450px; 
-  height: 450px; 
-  object-fit: cover;
-  margin: 0 auto;
-  display: block; 
+header img {
+    display: block;
+    margin: 0 auto 20px;
 }
 
 header .intro-text .name {
@@ -122,6 +118,30 @@ header .intro-text .skills {
     }
 }
 
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -136,6 +156,10 @@ header .intro-text .skills {
     letter-spacing: 1px;
 }
 
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
 .navbar-default,
 .navbar-inverse {
     border: 0;
@@ -143,6 +167,11 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
 }
 
 section.success {
@@ -154,9 +183,14 @@ section.success {
     section {
         padding: 75px 0;
     }
+
+    section.first {
+        padding-top: 75px;
+    }
 }
 
 #portfolio .portfolio-item {
+    right: 0;
     margin: 0 0 15px;
 }
 
@@ -169,18 +203,16 @@ section.success {
 
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba({{ site.color.primary-rgb }}, 0.9);
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    transition: all ease 0.5s;
+    background: rgba({{ site.color.primary-rgb }},.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link:hover .caption {
+#portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
 
@@ -199,69 +231,120 @@ section.success {
     margin-top: -12px;
 }
 
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
 }
 
-/* Portfolio Grid Adjustments */
-.portfolio-flex-grid .portfolio-flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between items */
-}
-
-.portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-    flex: 1 0 100%; /* One item per row by default */
-    max-width: 100%; /* Each item takes full width */
-    box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-        flex: 1 0 calc(50% - 20px); /* Two items per row on medium screens */
-        max-width: calc(50% - 20px);
+/* Flexbox Portfolio Grid */
+@media (min-width: 640px) {
+    .portfolio-flex-grid .portfolio-flex-row {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: space-between;
     }
-}
-
-@media (min-width: 1200px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-        flex: 1 0 calc(25% - 20px); /* Four items per row on large screens */
-        max-width: calc(25% - 20px);
+      flex: 1 0 49%;
+      max-width: 49%;
     }
+  }
+  @media (min-width: 960px) {
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+      flex: 1 0 32%;
+      max-width: 32%;
+    }
+  }
+  /* A large grid might need four columns on widescreen layouts */
+  /* @media (min-width: 1380px) {
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+      flex: 1 0 23.5%;
+      max-width: 23.5%;
+    }
+  } */
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
 }
 
-.btn-social {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 30px;
-  line-height: 55px;
-  color: #fff;
-  background: transparent;
-  transition: all 0.3s ease;
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #{{ site.color.primary }};
+    background: #fff;
 }
 
-.btn-social:hover {
-  color: #{{ site.color.secondary }}; /* Adjust to your hover color preference */
-  background-color: #fff;
-  border-color: #{{ site.color.secondary }};
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
 }
 
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-  margin-left: 0;
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
 }
 
-.list-inline > li {
-  display: inline-block;
-  margin: 0 5px;
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #{{ site.color.primary }};
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
 }
 
 footer {
@@ -277,7 +360,119 @@ footer .footer-above {
     background-color: #{{ site.color.secondary }};
 }
 
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
 footer .footer-below {
     padding: 25px 0;
     background-color: #{{ site.color.secondary-dark }};
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #{{ site.color.secondary }};
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #{{ site.color.secondary }};
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.navbar-nav>.active>a {
+    background-color: #{{ site.color.secondary-dark }} !important;
+}
+
+/* Fix modal mouse wheel issues */
+/* https://github.com/twbs/bootstrap/issues/16297 */
+.modal.fade.in {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
