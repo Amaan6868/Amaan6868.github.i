@@ -5,7 +5,6 @@ date: 2024-12-07
 img: Tranquility
 alt: image-alt
 project-date: December 2024
-client: Start Bootstrap
 category: Android App Development
 description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
