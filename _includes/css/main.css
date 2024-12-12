@@ -247,6 +247,22 @@ section.success {
     z-index: 2;
 }
 
+.portfolio-row {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */
+    flex-wrap: wrap; /* Ensures items wrap if there are too many */
+    gap: 20px; /* Adds spacing between items */
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
