@@ -297,21 +297,19 @@ section.success {
     }
   }
   /* A large grid might need four columns on widescreen layouts */
-  /* @media (min-width: 1380px) {
+   @media (min-width: 1380px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
       flex: 1 0 23.5%;
       max-width: 23.5%;
     }
-  } */
+  } 
 
-
-/* Ensure the container and rows use flexbox for alignment */
 .portfolio-flex-grid .portfolio-row {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping to handle rows properly */
-    justify-content: center; /* Center align the items */
-    gap: 20px; /* Add spacing between items if desired */
-    margin-bottom: 20px; /* Add some space between rows */
+    display: flex; 
+    flex-wrap: wrap; /
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 20px; 
 }
 
 .portfolio-flex-grid .portfolio-item {
@@ -333,6 +331,12 @@ section.success {
         flex: 1 0 100%; /* One item per row on very small screens */
         max-width: 100%;
     }
+}
+
+#portfolio {
+    background-color: black; /* Set background to black */
+    color: white; /* Set text color to white */
+    padding: 100px 0; /* Maintain existing padding */
 }
 
 
