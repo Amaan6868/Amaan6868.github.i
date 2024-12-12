@@ -6,5 +6,5 @@ img: SoundSpace.png
 alt: SoundSpace
 project-date: December 2023
 category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
+SoundSpace is a social media platform for music lovers. Users can rate and review songs, discover highly-rated tracks, and explore detailed reviews—all in one place. While ratings and reviews are open for everyone to see, only registered users can contribute by signing in to create their own ratings and reviews. The app is built with a focus on seamless user experience, leveraging modern technologies and best practices. You can find the link [here](https://github.com/Amaan6868/SoundSpace).
