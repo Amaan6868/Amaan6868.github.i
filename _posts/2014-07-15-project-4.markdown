@@ -3,7 +3,7 @@ layout: default
 modal-id: CalendarApp
 date: 2024-05-17
 img: CalendarApp.png
-alt: image-alt
+alt: CalendarApp
 project-date: May 2024
 category: Web Development
 description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
