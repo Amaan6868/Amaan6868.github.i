@@ -6,5 +6,5 @@ img: ECommerce.png
 alt: ECommerce
 project-date: December 2024
 category: Web Development
-description: ECommerce app built following the [LinkedIn Learning tutorial](https://www.linkedin.com/learning/azure-microservices-with-dot-net-core-for-developers/making-sense-of-microservices-architecture-in-a-dot-net-core-and-azure-ecosystem?u=106240434). Here is the [link to the repo](https://github.com/Amaan6868/ECommerce).
 ---
+ECommerce app built following the [LinkedIn Learning tutorial](https://www.linkedin.com/learning/azure-microservices-with-dot-net-core-for-developers/making-sense-of-microservices-architecture-in-a-dot-net-core-and-azure-ecosystem?u=106240434). Here is the [link to the repo](https://github.com/Amaan6868/ECommerce).
