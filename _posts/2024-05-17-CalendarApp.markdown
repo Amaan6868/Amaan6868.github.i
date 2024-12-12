@@ -6,5 +6,5 @@ img: CalendarApp.png
 alt: CalendarApp
 project-date: May 2024
 category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
+This repository contains a WPF Calendar application developed as a school project. The application is designed to provide a user-friendly interface for managing events, appointments, and reminders through a calendar view. It demonstrates foundational skills in C#, XAML, and WPF application development. You can find the repository [here](https://github.com/kainath05/jacappdev1-2024-katastrophe).
