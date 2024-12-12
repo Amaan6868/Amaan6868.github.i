@@ -2,7 +2,7 @@
 layout: default
 modal-id: 5
 date: 2024-12-10
-img: BotnetSimulation.png
+img: Botnet.png
 alt: BotnetSimulation
 project-date: December 2024
 category: Cyber Security
