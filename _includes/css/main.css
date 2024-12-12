@@ -463,6 +463,10 @@ footer .footer-below {
     background-color: #{{ site.color.secondary-dark }};
 }
 
+.footer-col.col-md-6 {
+    background: #{{ site.color.primary }};
+}
+
 .btn-social {
     display: inline-block;
     width: 50px;
