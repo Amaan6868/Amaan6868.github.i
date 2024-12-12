@@ -167,6 +167,12 @@ header .intro-text .skills {
     border: 0;
 }
 
+.navbar .navbar-nav li a:hover {
+    color: rgb(196, 164, 132); 
+    text-decoration: none; 
+}
+
+
 section.portfolio {
     background: #{{ site.color.primary }};
 }
