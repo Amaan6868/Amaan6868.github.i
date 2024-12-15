@@ -372,16 +372,16 @@ section.success {
 }
 
 #portfolio hr.star-primary:after {
-    color: black; /* Optional: Change star color inside the horizontal rule if needed */
-    background-color: white;
+    color: white; 
+    background-color: black;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
-    background: rgba(255, 255, 255, 0.1); /* Light transparent overlay for captions */
+    background: rgba(255, 255, 255, 0.1); 
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    background: rgba(255, 255, 255, 0.3); /* Slightly brighter overlay on hover */
+    background: rgba(255, 255, 255, 0.3); 
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
